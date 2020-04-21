@@ -1,17 +1,29 @@
 <template>
-  <div id="button">
-    <p>INICIAR SESIÓN</p>
+<div>
+<router-link to="/siguiente"  class="router">
+    <div id="button">
+      <a href="../view/vista2.vue">
+      <p>INICIAR SESIÓN</p>
 
-    <img src="../imagenes/next.png" />
+    <img src="../imagenes/next.png"/>
+  
+</a>
   </div>
+</router-link>
+</div>
+
+ 
 </template>
 
 <script>
-export default {};
+
+export default {
+  name: "iniciarbtn"
+};
 </script>
 
 <style scoped>
-* {
+#button{
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: row;
@@ -23,7 +35,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(#45108a, #2ddaf3);
 }
  #button{
-    position: fixed;
+  position: fixed;
    left: 0;
    bottom: 0;
    width: 100%;
@@ -34,5 +46,13 @@ p {
   padding-right: 2rem;
   background: transparent;
   font-weight: bold;
+
+}
+a{
+ color: #ffffff;
+ text-decoration: none;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 </style>
